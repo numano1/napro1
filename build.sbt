@@ -13,9 +13,9 @@ val chiselTestVersion = "0.5.4"
 val breezeVersion = "2.0"
 val dspVersion = "1.5.6"
 
-lazy val coderp = (project in file("."))
+lazy val napro_1 = (project in file("."))
   .settings(
-    name := "coderP",
+    name := "napro1",
     libraryDependencies ++= Seq(
       "edu.berkeley.cs" %% "chisel3" % chiselVersion,
       "edu.berkeley.cs" %% "chiseltest" % chiselTestVersion,
