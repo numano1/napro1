@@ -10,7 +10,7 @@ import chisel3.stage.{ChiselStage, ChiselGeneratorAnnotation}
 class napro1 extends ExtModule {
   // SPI + reset
   val ss      = IO(Input(Bool()))
-  val sck     = IO(Input(Bool()))
+  val sck     = IO(Input(Clock()))
   val mosi    = IO(Input(Bool()))
   val miso    = IO(Output(Bool()))
   val resetn  = IO(Input(Bool()))
@@ -64,7 +64,8 @@ class napro1 extends ExtModule {
   val tunefreq_fine_n = IO(Output(UInt(6.W)))
 }
 
-/** Verilog emission entry point (emits a blackbox named `napro1`). */
+import chisel3.stage.{ChiselStage, ChiselGeneratorAnnotation}
+
 object napro1 extends App {
   (new ChiselStage).execute(
     args,
