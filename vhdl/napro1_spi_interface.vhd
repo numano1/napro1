@@ -185,7 +185,7 @@ begin -- rtl
   begin
     if resetn = '0' then
       FRME <= '0';
-    elsif ss = '0' and sck'event and sck = '1' then
+    elsif sck'event and sck = '1' then
       FRME <= counter(0) or counter(1) or counter(2) or counter(3) or aPAR_MISMATCH;
     end if;
   end process update_frme;
