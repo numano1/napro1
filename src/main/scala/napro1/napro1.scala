@@ -69,7 +69,7 @@ import chisel3.stage.{ChiselStage, ChiselGeneratorAnnotation}
 object napro1 extends App {
   (new ChiselStage).execute(
     args,
-    Seq(ChiselGeneratorAnnotation(() => new napro1))
+    Seq(ChiselGeneratorAnnotation(() => new napro1v))
   )
 }
 
