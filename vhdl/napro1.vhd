@@ -1,7 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use work.napro1_addr_pkg_v2.all;
+use napro1_addr_pkg_v2.all;
 
 entity napro1 is
   port (

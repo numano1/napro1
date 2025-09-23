@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
-use work.napro1_addr_pkg_v2.all;
+use napro1_addr_pkg_v2.all;
 
 entity mem_reg_napro1 is
   port (
